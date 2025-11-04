@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_emergency_background">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <!-- Header -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🚨 Emergency SOS"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:gravity="center"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hold the button for 3 seconds to send alert"
+                android:textSize="14sp"
+                android:textColor="@android:color/white"
+                android:gravity="center"
+                android:alpha="0.9"
+                android:layout_marginBottom="24dp" />
+
+            <!-- SOS Button Container -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="8dp"
+                android:background="@drawable/glass_background">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="30dp">
+
+                    <!-- SOS Button with Progress Ring -->
+                    <FrameLayout
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_gravity="center">
+
+                        <!-- Progress Ring -->
+                        <ProgressBar
+                            android:id="@+id/progressRing"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            style="@android:style/Widget.ProgressBar.Horizontal"
+                            android:indeterminate="false"
+                            android:max="100"
+                            android:progress="0"
+                            android:progressDrawable="@drawable/circular_progress"
+                            android:visibility="invisible" />
+
+                        <!-- SOS Button -->
+                        <FrameLayout
+                            android:id="@+id/sosButton"
+                            android:layout_width="180dp"
+                            android:layout_height="180dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/gradient_sos_button"
+                            android:clickable="true"
+                            android:focusable="true">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:orientation="vertical"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="SOS"
+                                    android:textSize="42sp"
+                                    android:textStyle="bold"
+                                    android:textColor="@android:color/white" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="HOLD"
+                                    android:textSize="16sp"
+                                    android:textColor="@android:color/white"
+                                    android:alpha="0.8" />
+                            </LinearLayout>
+                        </FrameLayout>
+                    </FrameLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Press and hold for 3 seconds"
+                        android:textSize="13sp"
+                        android:textColor="#666666"
+                        android:layout_gravity="bottom|center_horizontal"
+                        android:layout_marginTop="16dp" />
+                </FrameLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Quick Actions -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="20dp"
+                android:weightSum="2">
+
+                <Button
+                    android:id="@+id/callPoliceButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="8dp"
+                    android:text="📞 Call 100\nPolice"
+                    android:textSize="14sp"
+                    android:padding="16dp"
+                    android:background="@drawable/glass_background"
+                    android:textColor="@android:color/white"
+                    style="?attr/materialButtonOutlinedStyle" />
+
+                <Button
+                    android:id="@+id/callAmbulanceButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="8dp"
+                    android:text="🚑 Call 108\nAmbulance"
+                    android:textSize="14sp"
+                    android:padding="16dp"
+                    android:background="@drawable/glass_background"
+                    android:textColor="@android:color/white"
+                    style="?attr/materialButtonOutlinedStyle" />
+            </LinearLayout>
+
+            <!-- Emergency Contacts Section -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="4dp"
+                android:background="@drawable/glass_background">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Emergency Contacts"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="#1A1A1A"
+                        android:layout_marginBottom="4dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Select contacts to alert (Max 5)"
+                        android:textSize="13sp"
+                        android:textColor="#666666"
+                        android:layout_marginBottom="16dp" />
+
+                    <!-- Empty State -->
+                    <LinearLayout
+                        android:id="@+id/emptyStateLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="30dp"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="📱"
+                            android:textSize="48sp"
+                            android:layout_marginBottom="16dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="No contacts added yet"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:textColor="#1A1A1A"
+                            android:layout_marginBottom="8dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Tap the + button to add emergency contacts"
+                            android:textSize="13sp"
+                            android:textColor="#666666"
+                            android:gravity="center" />
+                    </LinearLayout>
+
+                    <!-- Contacts List -->
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/contactsRecyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="visible"
+                        tools:listitem="@layout/item_emergency_contact" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Warning Text -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/rounded_warning_bg"
+                android:padding="16dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="⚠️"
+                    android:textSize="20sp"
+                    android:layout_marginEnd="12dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="For genuine emergencies only. Misuse may result in legal consequences."
+                    android:textSize="12sp"
+                    android:textColor="#D32F2F"
+                    android:lineSpacingExtra="2dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Floating Action Button -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabAddContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="24dp"
+        android:src="@drawable/ic_add"
+        android:contentDescription="Add Contact"
+        app:tint="@android:color/white"
+        app:backgroundTint="#F44336" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

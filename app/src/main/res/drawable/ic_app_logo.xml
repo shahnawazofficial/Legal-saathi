@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24"
+    android:tint="?attr/colorControlNormal">
+
+    <!-- Overall container color, using the brand's blue -->
+    <group
+        android:translateX="0"
+        android:translateY="0" >
+
+        <!-- Stack of Books (Symbolizing Law/Knowledge) - White -->
+        <path
+            android:fillColor="@color/white"
+            android:pathData="M5 21h14v-2H5v2zM19 3H5v2h14V3zM19 7H5v2h14V7z" />
+
+        <!-- Stylized Human Figure (Lawyer/Saathi) - Primary Blue -->
+        <path
+            android:fillColor="@color/primary_blue"
+            android:pathData="M12 11c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
+
+        <!-- The figure is offset slightly to appear to stand on the books. -->
+        <path
+            android:fillColor="@color/white"
+            android:pathData="M12 11c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"
+            android:translateY="-4" />
+    </group>
+</vector>

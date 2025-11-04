@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="start"
+    android:orientation="horizontal"
+    android:paddingStart="8dp"
+    android:paddingTop="4dp"
+    android:paddingEnd="48dp"
+    android:paddingBottom="4dp">
+
+    <!-- AI Avatar -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_gravity="top"
+        android:layout_marginEnd="8dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="2dp">
+
+        <ImageView
+            android:id="@+id/ai_avatar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#4CAF50"
+            android:padding="6dp"
+            android:src="@drawable/ic_ai_assistant"
+            app:tint="@android:color/white" />
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Message Bubble -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/ai_message_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="2dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_message_ai"
+                android:maxWidth="280dp"
+                android:orientation="vertical"
+                android:padding="12dp">
+
+                <TextView
+                    android:id="@+id/ai_message_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="2dp"
+                    android:text="This is an AI message."
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp" />
+
+                <!-- Timestamp -->
+                <TextView
+                    android:id="@+id/ai_message_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="12:30 PM"
+                    android:textColor="#666666"
+                    android:textSize="11sp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Message Actions (Copy, Share, etc.) -->
+        <LinearLayout
+            android:id="@+id/message_actions_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <ImageButton
+                android:id="@+id/copy_button"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Copy message"
+                android:padding="6dp"
+                android:src="@drawable/ic_copy"
+                app:tint="#666666" />
+
+            <ImageButton
+                android:id="@+id/share_button"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="8dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Share message"
+                android:padding="6dp"
+                android:src="@drawable/ic_share"
+                app:tint="#666666" />
+
+            <ImageButton
+                android:id="@+id/speak_button"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="8dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Speak message"
+                android:padding="6dp"
+                android:src="@drawable/ic_volume"
+                app:tint="#666666" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

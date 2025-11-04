@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Core App Colors -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="gray_background">#F5F5F5</color>
+    <color name="dark_text">#1A1A1A</color>
+
+    <color name="green">#4CAF50</color>
+    <color name="orange">#FF9800</color>
+    <color name="red">#F44336</color>
+
+    <!-- Primary Brand Colors (Blue Theme) -->
+    <color name="primary_blue">#3A82F6</color>
+    <color name="light_blue_shade">#72A4F9</color>
+
+    <!-- Splash Screen Gradient Colors -->
+    <color name="splash_start_blue">@color/primary_blue</color>
+    <color name="splash_center_light_blue">@color/light_blue_shade</color>
+
+    <!-- Chat UI Colors -->
+    <color name="ai_bubble">#E0E0E0</color>
+    <color name="user_bubble">@color/primary_blue</color>
+
+</resources>

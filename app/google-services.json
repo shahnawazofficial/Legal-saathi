@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "828692809568",
+    "project_id": "legalhelpaiv2",
+    "storage_bucket": "legalhelpaiv2.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:828692809568:android:83c1928062f35365180005",
+        "android_client_info": {
+          "package_name": "com.example.legalhelpaiapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCkDbt0wkAE2ycbzHqUfv-C1D-MuUWuJM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
