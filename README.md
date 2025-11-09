@@ -88,16 +88,17 @@ Distributed under the **MIT License**. See the `LICENSE` file for more informati
 
 | Role | Contact |
 | :--- | :--- |
-| **Project Owner** | [shahnawazofficial](https://github.com/shahnawazofficial) |
+| **Project Owner** | https://github.com/shahnawazofficial |
 | **Repository Link** | https://github.com/shahnawazofficial/Legal-saathi |
 
 ---
 
 ## 📥 Download Latest Release
 
-**Download APK:**  
-https://github.com/shahnawazofficial/Legal-saathi/releases/download/v2.0.0/app-debug.apk
+👉 **[Download APK (Latest Version)](https://github.com/shahnawazofficial/Legal-saathi/releases/download/v2.0.0/app-debug.apk)**
 
-# Legal-saathi
-Legal Saathi (Legal Companion) is a modern Android application built using Kotlin that leverages Google's Generative AI to provide Indian citizens with instant, accurate, and actionable legal assistance and government scheme information.
->>>>>>> 9ff5fc84cb5ffe7f7f12aead16b328e349f5a948
+---
+
+## Short Summary
+
+**Legal Saathi** is an AI-powered legal assistant app built with Kotlin and Google's Gemini AI, designed to help Indian users access legal information and government scheme details easily and accurately.

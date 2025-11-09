@@ -1,0 +1,11 @@
+{
+  "latestVersion": "2.0.0",
+  "latestVersionCode": 2,
+  "updateUrl": "https://github.com/shahnawazofficial/Legal-saathi/releases/download/v2.0.0/app-debug.apk",
+  "updateTitle": "New Update Available! 🎉",
+  "updateMessage": "A new version of Legal Saathi is available with exciting new features and improvements!",
+  "releaseNotes": "• New Emergency SOS feature with live location sharing\n• Improved AI chat experience with better responses\n• Added 19+ legal resources directory\n• Enhanced profile management\n• Bug fixes and performance improvements\n• Beautiful new Material Design UI",
+  "fileSize": "25 MB",
+  "forceUpdate": false,
+  "minRequiredVersion": "1.0"
+}
