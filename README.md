@@ -48,7 +48,7 @@ Follow these instructions to set up the project locally for development and test
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/shahnawazofficial/Legal-saathi.git](https://github.com/shahnawazofficial/Legal-saathi.git)
+    git clone https://github.com/shahnawazofficial/Legal-saathi.git
     cd Legal-saathi
     ```
 
@@ -88,5 +88,11 @@ Distributed under the **MIT License**. See the `LICENSE` file for more informati
 
 | Role | Contact |
 | :--- | :--- |
-| **Project Owner** | [shahnawazofficial](https://github.com/shahnawazofficial) |
-| **Repository Link** | [https://github.com/shahnawazofficial/Legal-saathi](https://github.com/shahnawazofficial/Legal-saathi) |
+| **Project Owner** | https://github.com/shahnawazofficial |
+| **Repository Link** | https://github.com/shahnawazofficial/Legal-saathi |
+
+---
+
+## 📥 Download Latest Release
+
+👉 **[Download APK (Latest Version)](https://github.com/shahnawazofficial/Legal-saathi/releases/download/v2.0.0/app-debug.apk)**
