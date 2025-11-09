@@ -29,8 +29,8 @@ Our goal is to be a trustworthy **Legal Companion** available 24/7, making infor
 | Component | Technology | Description |
 | :--- | :--- | :--- |
 | **Platform** | Android | Target platform for the application. |
-| **Language** | [Kotlin](https://kotlinlang.org/) | Preferred language for modern Android development. |
-| **AI Backend** | [Google's Generative AI (e.g., Gemini API)](https://ai.google.dev/) | Powers the core legal Q&A and scheme information engine. |
+| **Language** | Kotlin | Preferred language for modern Android development. |
+| **AI Backend** | Google's Gemini API | Powers the core legal Q&A and scheme information engine. |
 | **Architecture** | Modern Android Architecture (e.g., MVVM) | Ensures maintainability and testability of the codebase. |
 | **Build System** | Gradle Kotlin DSL | Used for configuration and dependency management. |
 
@@ -48,7 +48,7 @@ Follow these instructions to set up the project locally for development and test
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/shahnawazofficial/Legal-saathi.git](https://github.com/shahnawazofficial/Legal-saathi.git)
+    git clone https://github.com/shahnawazofficial/Legal-saathi.git
     cd Legal-saathi
     ```
 
@@ -89,4 +89,15 @@ Distributed under the **MIT License**. See the `LICENSE` file for more informati
 | Role | Contact |
 | :--- | :--- |
 | **Project Owner** | [shahnawazofficial](https://github.com/shahnawazofficial) |
-| **Repository Link** | [https://github.com/shahnawazofficial/Legal-saathi](https://github.com/shahnawazofficial/Legal-saathi) |
+| **Repository Link** | https://github.com/shahnawazofficial/Legal-saathi |
+
+---
+
+## 📥 Download Latest Release
+
+**Download APK:**  
+https://github.com/shahnawazofficial/Legal-saathi/releases/download/v2.0.0/app-debug.apk
+
+# Legal-saathi
+Legal Saathi (Legal Companion) is a modern Android application built using Kotlin that leverages Google's Generative AI to provide Indian citizens with instant, accurate, and actionable legal assistance and government scheme information.
+>>>>>>> 9ff5fc84cb5ffe7f7f12aead16b328e349f5a948
