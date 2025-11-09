@@ -29,8 +29,8 @@ Our goal is to be a trustworthy **Legal Companion** available 24/7, making infor
 | Component | Technology | Description |
 | :--- | :--- | :--- |
 | **Platform** | Android | Target platform for the application. |
-| **Language** | Kotlin | Preferred language for modern Android development. |
-| **AI Backend** | Google's Gemini API | Powers the core legal Q&A and scheme information engine. |
+| **Language** | [Kotlin](https://kotlinlang.org/) | Preferred language for modern Android development. |
+| **AI Backend** | [Google's Generative AI (e.g., Gemini API)](https://ai.google.dev/) | Powers the core legal Q&A and scheme information engine. |
 | **Architecture** | Modern Android Architecture (e.g., MVVM) | Ensures maintainability and testability of the codebase. |
 | **Build System** | Gradle Kotlin DSL | Used for configuration and dependency management. |
 
@@ -95,10 +95,8 @@ Distributed under the **MIT License**. See the `LICENSE` file for more informati
 
 ## 📥 Download Latest Release
 
-👉 **[Download APK (Latest Version)](https://github.com/shahnawazofficial/Legal-saathi/releases/download/v2.0.0/app-debug.apk)**
+**Download APK:**  
+https://github.com/shahnawazofficial/Legal-saathi/releases/download/v2.0.0/app-debug.apk
 
----
-
-## Short Summary
-
-**Legal Saathi** is an AI-powered legal assistant app built with Kotlin and Google's Gemini AI, designed to help Indian users access legal information and government scheme details easily and accurately.
+# Legal-saathi
+Legal Saathi (Legal Companion) is a modern Android application built using Kotlin that leverages Google's Generative AI to provide Indian citizens with instant, accurate, and actionable legal assistance and government scheme information.
